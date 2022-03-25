@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<remv1:Remediation-Plugin xmlns:remv1="RemediationVersion1.xsd" Name="Notify Asset Owner" Version="1">
+  <remv1:Action Name="Notify Asset Owner" Command="python">
+  <remv1:ConstantParameter Name="Script" Switch="NotifyAssetOwner.py" Order="1" />
+  <remv1:StringParameter Name="AlarmID" Switch="" Order="2" />
+  <remv1:StringParameter Name="AssetCSV" Switch="" Order="3" />
+  <remv1:StringParameter Name="PM_URL" Switch="" Order="4" />
+  <remv1:StringParameter Name="API_Key" Switch="" Order="5" />
+  <remv1:StringParameter Name="SMTP_Server" Switch="" Order="6" />
+  <remv1:StringParameter Name="Email" Switch="" Order="7" />
+   <remv1:EncryptedParameter>
+	  <remv1:StringParameter Name="Password" Switch="" Order="8" />
+   </remv1:EncryptedParameter>
+
+  </remv1:Action>
+</remv1:Remediation-Plugin>
